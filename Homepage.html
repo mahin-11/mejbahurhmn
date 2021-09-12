@@ -1,0 +1,271 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title> mejbahur rahman</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/8eec1d18bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <!--Image Slide Show-->
+
+    <div class="all_silders">
+        <div class="slider active"><img src="WbBanner1.PNG" alt="slide" width="800px" height="450px"></div>
+        <div class="slider"><img src="WebBanner3.PNG" alt="slide" width="800px" height="450px"></div>
+        <div class="slider"><img src="WebBanner2.PNG" alt="slide" width="800px" height="450px"></div>
+        <div class="slider"><img src="WebBanner4.PNG" alt="slide" width="800px" height="450px"></div>
+        <div class="slider"><img src="WebBanner5.PNG" alt="slide" width="800px" height="450px"></div>
+        <div class="slider"><img src="WebBanner6.PNG" alt="slide" width="800px" height="450px"></div>
+    </div>
+    
+    <button id="prev" onclick="prev()" class="prev"><i class="fas fa-chevron-left"></i></button>
+    <button id="next" onclick="next()" class="next"><i class="fas fa-chevron-right"></i></button>
+    
+    
+    
+    <script type="text/javascript">
+    setInterval (function () { 
+        if (document.getElementsByClassName('slider')[0].classList.contains('active')) {
+            document.getElementsByClassName('slider') [1].classList.add('active');
+            document.getElementsByClassName('slider')[0].classList.remove('active');
+        } else if (document.getElementsByClassName('slider')[1].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [2].classList.add('active');
+            document.getElementsByClassName('slider')[1].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[2].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [3].classList.add('active');
+            document.getElementsByClassName('slider')[2].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[3].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [4].classList.add('active');
+            document.getElementsByClassName('slider')[3].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[4].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [5].classList.add('active');
+            document.getElementsByClassName('slider')[4].classList.remove('active');
+        }
+
+
+    },4000);
+    </script>
+    
+    <script type="text/javascript">
+    function next (){
+        if (document.getElementsByClassName('slider')[0].classList.contains('active')) {
+            document.getElementsByClassName('slider') [1].classList.add('active');
+            document.getElementsByClassName('slider')[0].classList.remove('active');
+        } else if (document.getElementsByClassName('slider')[1].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [2].classList.add('active');
+            document.getElementsByClassName('slider')[1].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[2].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [3].classList.add('active');
+            document.getElementsByClassName('slider')[2].classList.remove('active');
+        }   
+        else if (document.getElementsByClassName('slider')[3].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [4].classList.add('active');
+            document.getElementsByClassName('slider')[3].classList.remove('active');
+        }  
+        else if (document.getElementsByClassName('slider')[4].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [5].classList.add('active');
+            document.getElementsByClassName('slider')[4].classList.remove('active');
+        }  
+      }
+    
+    
+        function prev (){
+        if (document.getElementsByClassName("slider")[0].classList.contains('active')){
+            document.getElementsByClassName('slider') [5].classList.add('active');
+            document.getElementsByClassName('slider')[0].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[5].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [4].classList.add('active');
+            document.getElementsByClassName('slider')[5].classList.remove('active');
+        }  
+        else if (document.getElementsByClassName("slider")[4].classList.contains('active')){
+            document.getElementsByClassName('slider') [3].classList.add('active');
+            document.getElementsByClassName('slider')[4].classList.remove('active');
+        }
+        else if (document.getElementsByClassName("slider")[3].classList.contains('active')){
+            document.getElementsByClassName('slider') [2].classList.add('active');
+            document.getElementsByClassName('slider')[3].classList.remove('active');
+        }
+        else if (document.getElementsByClassName('slider')[2].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [1].classList.add('active');
+            document.getElementsByClassName('slider')[2].classList.remove('active');
+        }  
+        else if (document.getElementsByClassName('slider')[1].classList.contains('active'))
+        {
+            document.getElementsByClassName('slider') [0].classList.add('active');
+            document.getElementsByClassName('slider')[1].classList.remove('active');
+        }  
+    }
+    </script>
+
+
+   <!--Menu Bar-->
+
+    <div class="Menu-Bar">
+        <ul>
+          <li class="active"><a href="HomePage.html">Home</a></li>
+          <li><a href="#">Content</a>
+        <div class="sub-menu-1">
+             <ul>
+                 <li class="hover-me"> <a href="#">কবিতা</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                      <ul>
+                         <li><a href="kobita.html">গদ্য কবিতা</a></li>
+                         <li><a href="#">পদ্য কবিতা</a></li>
+                         <li><a href="#">আরও</a></li>
+                      </ul>
+                    </div>
+                <li class="hover-me"><a href="#">গল্প</a><i class="fa fa-angle-right"></i> 
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="golpo.html">ছোট গল্প</a></li>
+                            <li><a href="#">উপন্যাস</a></li> 
+                            <li><a href="#">প্রবন্ধ</a></li>
+                        </ul>
+                   </div>
+                </li> 
+                 <li> <a href="#">গান</a></li>
+                 <li> <a href="#">নাটিকা</a></li>
+             </ul>
+        </div>
+         </li>
+          <li><a href="#">ABCD</a>
+            <div class="sub-menu-1">
+            <ul>
+                <li> <a href="#">ভিডিও</a></li>
+                <li> <a href="#">কবিতা- আবৃত্তি</a></li>
+                <li> <a href="Videos.html">অনলাইন - ক্লাস</a></li>
+                <li> <a href="#">ফ্রেমবন্দি - কবিতা</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Connect Us</a>
+             <div class="sub-menu-1">
+                 <ul>
+                     <li><a href="Login.html">Login</a></li>
+                     <li><a href="Register.html">Register</a></li>
+                 </ul>
+             </div>
+          </li>
+          <li><a href="">About</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li> <a href="About.html">Contact</a></li>
+                    <li> <a href="#">স্বীকৃতি</a></li>
+                    <li> <a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div> 
+    </div>
+
+ 
+    <!--Card Image-->
+    
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="CardImage1.PNG">
+            </div>
+            <div class="content">
+                <h2>গদ্য কবিতা</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <a href="kobita.html">See Next</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="CardImage2.PNG">
+            </div>
+            <div class="content">
+                <h2>পদ্য কবিতা</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <a href="poddoKobita.html">See Next </a>
+            </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="CardImage3.PNG">
+                </div>
+                <div class="content">
+                    <h2>রম্য কবিতা</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="#">See Next </a>
+                </div>
+            </div>
+    </div>
+    
+    
+
+<!--Book Items-->
+<section>
+    <div class="book">
+        <img src="cover.jpg">
+    </div>
+</section>
+
+
+<!--Footer Menu-->
+
+<footer>
+    <div class="container10">
+        <div class="sec aboutus">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Nostrum nulla voluptate vel aut ipsa maxime tempore, <br> corporis repudiandae delectus,
+             similique minima cumque <br> aspernatur omnis culpa? Beatae magni totam accusantium voluptatem?</p>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/mejbarahman1971" target="_blink"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/MejbahurRahman" target="_blink"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https:/www.instagram.com/mejba98" target="_blink"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOuQ7HrrMqscRp3P6F-8vJA" target="_blink"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+    <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+        <li>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>Taj Mahal Road <br> Farakpur, Bangladesh</span>
+        </li>
+        <li>
+            <span><i class="fas fa-phone"></i></span>
+            <p><a href="tel: 0123456789">+880-1721327146</a></p>
+        </li>
+        <li>
+            <span><i class="fas fa-envelope-open"></i></span>
+            <p><a href="mailto:Mejba19031971@gmail.com">mejba19031971@gmail.com</a></p>
+        </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©2021 Mejbahur Rahman. All Copyright Reserved.</p>
+    </div>    
+</footer>
+
+</body>
+</html>
